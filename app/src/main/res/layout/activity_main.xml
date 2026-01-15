@@ -6,15 +6,47 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#BA4195"
     tools:context=".MainActivity">
 
     <TextView
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="#751FBC"
+        android:text="Greetings!"
+        android:textSize="50dp"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        />
+
+    <EditText
+        android:id="@+id/username"
+        android:layout_width="243dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:hint="Enter your name:"
+        />
+
+    <Button
+        android:id="@+id/greetBtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:text="Greet"
+        android:layout_marginTop="10dp"
+        />
+
+    <TextView
+        android:id="@+id/greetText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:textColor="@color/black"
+        />
+
 
 </LinearLayout>
+
+
+
